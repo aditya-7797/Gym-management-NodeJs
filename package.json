@@ -1,0 +1,21 @@
+{
+  "name": "gym-management-app",
+  "version": "1.0.0",
+  "description": "Simple gym management app built with Node.js and vanilla JavaScript.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "gym",
+    "nodejs",
+    "express",
+    "javascript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ForgeFit Gym Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Simple Gym Management App</p>
+        <h1>ForgeFit Gym Manager</h1>
+        <p class="hero-copy">
+          Track members, check-ins, renewals, and daily activity from one small app.
+        </p>
+      </div>
+      <div class="hero-panel">
+        <div>
+          <span class="label">Live Clock</span>
+          <strong id="clock">--:--:--</strong>
+        </div>
+        <div>
+          <span class="label">Theme</span>
+          <button id="themeToggle" class="secondary-button" type="button">Toggle theme</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="stats-grid" id="statsGrid">
+        <article class="stat-card">
+          <span>Total Members</span>
+          <strong id="totalMembers">0</strong>
+        </article>
+        <article class="stat-card">
+          <span>Active</span>
+          <strong id="activeMembers">0</strong>
+        </article>
+        <article class="stat-card">
+          <span>Premium</span>
+          <strong id="premiumMembers">0</strong>
+        </article>
+        <article class="stat-card">
+          <span>Renewals Soon</span>
+          <strong id="upcomingRenewals">0</strong>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Add Member</h2>
+          <p>Add new members quickly using the form below.</p>
+        </div>
+        <form id="memberForm" class="form-grid">
+          <label>
+            Full Name
+            <input id="name" name="name" type="text" placeholder="Enter full name" />
+          </label>
+          <label>
+            Email
+            <input id="email" name="email" type="email" placeholder="name@example.com" />
+          </label>
+          <label>
+            Phone
+            <input id="phone" name="phone" type="tel" placeholder="10 digit number" />
+          </label>
+          <label>
+            Plan
+            <select id="plan" name="plan">
+              <option>Basic</option>
+              <option>Standard</option>
+              <option>Premium</option>
+            </select>
+          </label>
+          <button class="primary-button" type="submit">Add Member</button>
+        </form>
+        <p id="formMessage" class="message"></p>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Members</h2>
+          <p>Search, inspect, and check in members.</p>
+        </div>
+        <div class="toolbar">
+          <input id="searchInput" type="search" placeholder="Search by name, email, or ID" />
+          <button id="refreshButton" class="secondary-button" type="button">Refresh</button>
+        </div>
+        <div id="membersList" class="members-list"></div>
+      </section>
+    </main>
+  </body>
+</html>
