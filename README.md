@@ -39,5 +39,6 @@ It allows basic member management, check-ins, and demonstrates real-world concep
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/pulse-gym-manager.git
+git clone https://github.com/aditya-7797/Gym-management-NodeJs
+.git
 cd pulse-gym-manager
